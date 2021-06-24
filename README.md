@@ -46,15 +46,15 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 ### NodeJS Avançado
 
-- [ ] - Padrão MVC
+- [x] - Padrão MVC
 
-- [ ] - Criando Base Model
+- [x] - Criando Base Model
 
-- [ ] - Utilizando o Base Model
+- [x] - Utilizando o Base Model
 
-- [ ] - Ajustes nos Controllers
+- [x] - Ajustes nos Controllers
 
-- [ ] - Ajustes nos Controllers - Continuação
+- [x] - Ajustes nos Controllers - Continuação
 
 - [ ] - Seeds de Usuários com Faker
 

@@ -56,9 +56,9 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Ajustes nos Controllers - Continuação
 
-- [ ] - Seeds de Usuários com Faker
+- [x] - Seeds de Usuários com Faker
 
-- [ ] - Seeds de Produtos e Imagens
+- [x] - Seeds de Produtos e Imagens
 
 - [ ] - Correção de Bugs Após Refatoração dos Models
 

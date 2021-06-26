@@ -62,9 +62,9 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Correção de Bugs Após Refatoração dos Models
 
-- [ ] - Serviço de Carregamento de Produtos
+- [x] - Serviço de Carregamento de Produtos
 
-- [ ] - Utilizando o Serviço de Carregamento de Produtos
+- [x] - Utilizando o Serviço de Carregamento de Produtos
 
 - [ ] - Ajuste na pesquisa
 

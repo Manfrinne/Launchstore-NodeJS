@@ -60,7 +60,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Seeds de Produtos e Imagens
 
-- [ ] - Correção de Bugs Após Refatoração dos Models
+- [x] - Correção de Bugs Após Refatoração dos Models
 
 - [ ] - Serviço de Carregamento de Produtos
 

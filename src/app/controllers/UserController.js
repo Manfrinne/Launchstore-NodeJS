@@ -100,8 +100,8 @@ module.exports = {
       req.session.destroy()
 
       //Remover as imagens da aplicação - public/images
-      promiseResults.map(results => {
-        results.rows.map(file => {
+      promiseResults.map(files => {
+        files.map(file => {
           try {
             unlinkSync(file.path)
           } catch (err) {

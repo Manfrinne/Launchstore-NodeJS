@@ -1,3 +1,5 @@
+const {unlinkSync} = require("fs")
+
 const Category = require("../models/Category")
 const Product = require("../models/Product")
 const File = require("../models/File")
@@ -24,16 +26,14 @@ module.exports = {
         }
       }
 
-      if (req.files.length == 0) {
-        return res.send("Please upload one image!")
-      }
+      if (req.files.length == 0) return res.send("Please upload one image!")
 
-      let { Category_id, name, description, old_price, price, quantity, status } = req.body
+      let { category_id, name, description, old_price, price, quantity, status } = req.body
 
       price = price.replace(/\D/g, "")
 
       const product_id = await Product.create({
-        Category_id,
+        category_id,
         user_id: req.session.userId,
         name,
         description,
@@ -43,7 +43,7 @@ module.exports = {
         status: status || 1
       })
 
-      const filesPromise = req.files.map(file => File.create({ ...file, product_id }))
+      const filesPromise = req.files.map(file => File.create({ name: file.filename, path: file.path, product_id }))
       await Promise.all(filesPromise)
 
       return res.redirect(`products/${product_id}/edit`)
@@ -72,7 +72,7 @@ module.exports = {
       product.price = formatPrice(product.price)
 
       let files = await Product.files(product.id)
-      files.map(file => ({
+      files = files.map(file => ({
         ...file,
         src: `${req.protocol}://${req.headers.host}${file.path.replace("public", "")}`
       }))
@@ -121,7 +121,7 @@ module.exports = {
       }
 
       if (req.files.length != 0) {
-        const newFilesPromise = req.files.map(file => File.create({ ...file, product_id: req.body.id }))
+        const newFilesPromise = req.files.map(file => File.create({ name: file.filename, path: file.path, product_id: req.body.id }))
 
         await Promise.all(newFilesPromise)
       }
@@ -131,9 +131,20 @@ module.exports = {
         const lastIndex = removedFiles.length - 1
         removedFiles.splice(lastIndex, 1)
 
-        const removedFilesPromise = removedFiles.map(id => File.delete(id))
+        const removedFilesIds = removedFiles.map(id => File.find(id))
+        let removedFilesLocal = await Promise.all(removedFilesIds)
 
+        const removedFilesPromise = removedFiles.map(id => File.delete(id))
         await Promise.all(removedFilesPromise)
+
+        removedFilesLocal.map(file => {
+          try {
+            unlinkSync(file.path)
+          } catch (err) {
+            console.error(err)
+          }
+        })
+
       }
 
       req.body.price = req.body.price.replace(/\D/g, "")
@@ -141,7 +152,7 @@ module.exports = {
 
       if (req.body.old_price != req.body.price) {
         const oldProduct = await Product.find(req.body.id)
-        req.body.old_price = oldProduct.rows[0].price
+        req.body.old_price = oldProduct.price
       }
 
       await Product.update(req.body.id, {
@@ -163,7 +174,17 @@ module.exports = {
 
   async delete(req, res) {
 
+    const files = await Product.files(req.body.id)
+
     await Product.delete(req.body.id)
+
+    files.map(file => {
+      try {
+        unlinkSync(file.path)
+      } catch (error) {
+        console.error(error)
+      }
+    })
 
     return res.redirect("products/create")
 

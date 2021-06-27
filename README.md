@@ -66,7 +66,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Utilizando o Serviço de Carregamento de Produtos
 
-- [ ] - Ajuste na pesquisa
+- [x] - Ajuste na pesquisa
 
 - [ ] - Validação Back e Front end dos Produtos
 

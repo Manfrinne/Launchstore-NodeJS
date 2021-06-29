@@ -68,7 +68,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Ajuste na pesquisa
 
-- [ ] - Validação Back e Front end dos Produtos
+- [x] - Validação Back e Front end dos Produtos
 
 - [ ] - Estrutura da Listagem de Anúncios do Usuário
 

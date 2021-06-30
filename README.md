@@ -70,9 +70,9 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Validação Back e Front end dos Produtos
 
-- [ ] - Estrutura da Listagem de Anúncios do Usuário
+- [x] - Estrutura da Listagem de Anúncios do Usuário
 
-- [ ] - Estilizando a Página de Listagem de Anúncios
+- [x] - Estilizando a Página de Listagem de Anúncios
 
 - [ ] - Padronizando Estilo dos Cards
 

@@ -16,6 +16,8 @@ routes.get('/', onlyUsers,  UserValidator.show, UserController.show)
 routes.put('/', UserValidator.update, UserController.update)
 routes.delete('/', UserController.delete)
 
+routes.get('/ads', UserController.ads)
+
 // LOGIN/LOGOUT
 routes.get('/login', ifLoggedRedirectToUsers, SessionController.loginForm)
 routes.post('/login', SessionValidator.login, SessionController.login)

@@ -74,11 +74,11 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estilizando a Página de Listagem de Anúncios
 
-- [ ] - Padronizando Estilo dos Cards
+- [x] - Padronizando Estilo dos Cards
 
-- [ ] - Pedido de Compra
+- [x] - Pedido de Compra
 
-- [ ] - Animações com Lottie e Mensagens pós Pedido
+- [x] - Animações com Lottie e Mensagens pós Pedido
 
 
 ## **Como contribuir**

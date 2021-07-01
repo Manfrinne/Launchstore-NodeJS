@@ -4,7 +4,6 @@ const { hash } = require('bcryptjs')
 const User = require('./src/app/models/User')
 const Product = require('./src/app/models/Product')
 const File = require('./src/app/models/File')
-const { fake } = require('faker')
 
 let usersIds = []
 let totalProducts = 10
@@ -56,7 +55,8 @@ async function createProducts() {
   while(files.length < 50) {
     files.push({
       name: faker.image.image(),
-      path: `public/images/placeholder.png`,
+      // path: `public/images/placeholder.png`,
+      path: faker.image.image(),
       product_id: productsIds[Math.floor(Math.random() * totalProducts)]
     })
   }

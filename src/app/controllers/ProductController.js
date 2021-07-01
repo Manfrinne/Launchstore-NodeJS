@@ -50,7 +50,7 @@ module.exports = {
 
       const product = await LoadProductService.load('product', {where: {id: req.params.id}})
 
-      return res.render("products/show", { product, files: product.files })
+      return res.render("products/show", { product })
     } catch (error) {
       console.log(error)
     }
@@ -64,7 +64,7 @@ module.exports = {
       // get categories
       const categories = await Category.findAll()
 
-      return res.render(`products/edit`, { product, categories, files: product.files })
+      return res.render(`products/edit`, { product, categories })
 
 
     } catch (error) {

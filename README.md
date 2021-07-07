@@ -88,7 +88,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Removendo Item do Carrinho
 
-- [ ] - Deletando Itens do Carrinho
+- [x] - Deletando Itens do Carrinho
 
 - [ ] - Estrutura HTML do Carrinho
 

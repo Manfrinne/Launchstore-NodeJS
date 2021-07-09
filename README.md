@@ -90,7 +90,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Deletando Itens do Carrinho
 
-- [ ] - Estrutura HTML do Carrinho
+- [x] - Estrutura HTML do Carrinho
 
 - [ ] - Estilizando o Carrinho
 

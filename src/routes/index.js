@@ -4,15 +4,15 @@ const routes = express.Router()
 const HomeController = require('../app/controllers/HomeController')
 const products = require('./products')
 const users = require('./users')
+const cart = require('./cart')
 
-// HOME
 routes.get('/', HomeController.index)
 
-// PRODUCTS
 routes.use('/products', products)
 
-// USERS
 routes.use('/users', users)
+
+routes.use('/cart', cart)
 
 // ALIAS
 routes.get('/ads/create', function(req, res) {

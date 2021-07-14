@@ -5,39 +5,39 @@
 
   {% call card.render('Carrinho', 'cart container') %}
 
-    <div class="header">
-      <p>Produtos</p>
-      <p>Preço</p>
-      <p>Qtd.</p>
-    </div>
-    <div class="itens">
-      {% for item in cart.items %}
-        <div class="item">
-          <a href="/products/{{item.product.id}}">
-            <img src="{{item.product.img}}" alt="Imagem do Produto {{item.product.name}}">
-            <span class="title">{{item.product.name}}</span>
-          </a>
-          <span class="price">{{item.formattedPrice}}</span>
-          <div class="quantity-control">
-            <form action="/cart/{{item.product.id}}/remove-one" method="post">
-              <button class="remove">
-                <i class="material-icons">remove_cicle_outline</i>
-              </button>
-            </form>
+  <div class="header">
+    <p>Produtos</p>
+    <p>Preço</p>
+    <p>Qtd.</p>
+  </div>
+  <div class="itens">
+    {% for item in cart.items %}
+      <div class="item">
+        <a href="/products/{{item.product.id}}">
+          <img src="{{item.product.img}}" alt="Imagem do Produto {{item.product.name}}">
+          <span class="title">{{item.product.name}}</span>
+        </a>
+        <span class="price">{{item.formattedPrice}}</span>
+        <div class="quantity-control">
+          <form action="/cart/{{item.product.id}}/remove-one" method="post">
+            <button class="remove">
+              <i class="material-icons">remove</i>
+            </button>
+          </form>
 
-            <span class="quantity">{{item.quantity}}</span>
+          <span class="quantity">{{item.quantity}}</span>
 
-            <form action="/cart/{{item.product.id}}/add-one" method="post">
-              <button class="add">
-                <i class="material-icons">add_cicle_outline</i>
-              </button>
-            </form>
-          <form class="trash" action="/cart/{{item.product.id}}/delete" method="post">
-            <button class="delete">
-              <i class="material-icons">delete</i>
+          <form action="/cart/{{item.product.id}}/add-one" method="post">
+            <button class="add">
+              <i class="material-icons">add</i>
             </button>
           </form>
         </div>
+        <form class="trash" action="/cart/{{item.product.id}}/delete" method="post">
+          <button class="delete">
+            <i class="material-icons">delete</i>
+          </button>
+        </form>
       {% endfor %}
     </div>
 
@@ -46,13 +46,13 @@
       <span>{{cart.total.formattedPrice}}</span>
     </div>
 
-    <div class="action">
-      <a href="/products/search" class="button shop">Continuar comprando</a>
+    <div class="actions">
+      <a href="/products/search" class="button shopp">Continuar comprando</a>
       <form action="/orders" method="post">
         <button class="button order">Realizar Pedido</button>
       </form>
     </div>
 
-  {% endcall %}
+    {% endcall %}
 
-{%endblock content%}
+  {%endblock content%}

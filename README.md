@@ -102,11 +102,11 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Adicionar o Carrinho ao Menu
 
-- [ ] - Tabela de Pedidos
+- [x] - Tabela de Pedidos
 
-- [ ] - Criar Pedidos
+- [x] - Criar Pedidos
 
-- [ ] - ados do Pedido
+- [ ] - Dados do Pedido
 
 - [ ] - Estrutura HTML dos Meus Pedidos
 

@@ -132,3 +132,33 @@
   width: 240px;
   margin: 16px auto;
 }
+
+/* Menu carrinho */
+header div.container {
+  grid-template-columns: 220px auto 320px;
+  grid-gap: 8px;
+}
+
+li.cart a {
+  position: relative;
+}
+
+li.cart span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+li.cart:hover span {
+  color: #222;
+  background-color: white;
+}

@@ -100,7 +100,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Carrinho Vazio
 
-- [ ] - Adicionar o Carrinho ao Menu
+- [x] - Adicionar o Carrinho ao Menu
 
 - [ ] - Tabela de Pedidos
 

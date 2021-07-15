@@ -94,11 +94,11 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estilizando o Carrinho
 
-- [ ] - Utilizando a Funcionalidade de Adicionar ao Carrinho
+- [x] - Utilizando a Funcionalidade de Adicionar ao Carrinho
 
-- [ ] - Utilizando a Funcionalidade Remover 1 item do Carrinho
+- [x] - Utilizando a Funcionalidade Remover 1 item do Carrinho
 
-- [ ] - Carrinho Vazio
+- [x] - Carrinho Vazio
 
 - [ ] - Adicionar o Carrinho ao Menu
 

@@ -108,7 +108,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Dados do Pedido
 
-- [ ] - Estrutura HTML dos Meus Pedidos
+- [x] - Estrutura HTML dos Meus Pedidos
 
 - [ ] - Estilo da Página Meus Pedidos
 

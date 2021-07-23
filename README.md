@@ -112,7 +112,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estilo da Página Meus Pedidos
 
-- [ ] - Service de Pedidos
+- [x] - Service de Pedidos
 
 - [ ] - Minhas Vendas e Detalhes do Pedido
 

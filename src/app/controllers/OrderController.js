@@ -1,9 +1,9 @@
 const LoadProductService = require("../services/loadProductService")
+const LoadOrderService = require("../services/loadOrderService")
 const User = require('../models/user')
 const Order = require('../models/order')
 
 const Cart = require('../../lib/cart')
-const { formatPrice, date } = require('../../lib/utils')
 const mailer = require('../../lib/mailer')
 
 
@@ -27,49 +27,22 @@ const email = (seller, product, buyer) => `
 module.exports = {
   async index (req, res) {
     // Pegar os pedidos do usuário
-    let orders = await Order.findAll({where: {buyer_id: req.session.userId}})
-
-    const getOrdersPromise = orders.map(async order => {
-      // Detalhes do produto
-      order.product = await LoadProductService.load('product', {
-        where: { id: order.product_id }
-      })
-
-      // Detalhes do comprador
-      order.buyer = await User.findOne({
-        where: { id: order.buyer_id }
-      })
-
-      // Detalhes do vendedor
-      order.seller = await User.findOne({
-        where: { id: order.seller_id }
-      })
-
-      // Formatação do preço
-      order.formattedPrice = formatPrice(order.price)
-      order.formattedTotal = formatPrice(order.total)
-
-      // Formatação do status
-      const  statuses = {
-        open: 'Aberto',
-        sold: 'Vendido',
-        canceled: 'Cancelado'
-      }
-
-      order.formattedStatus = statuses[order.status] //exem: statuses.open
-
-      // Formatação de atualizado em ...
-      const updatedAt = date(order.updated_at)
-      order.formattedUpdatedAt = `${order.formattedStatus} em ${updatedAt.day}/${updatedAt.month}/${updatedAt.year} às ${updatedAt.hour}h${updatedAt.minutes}`
-
-      return order
+    const orders = await LoadOrderService.load('orders', {
+      where: {buyer_id: req.session.userId}
     })
 
-    orders = await Promise.all(getOrdersPromise)
-
     return res.render('orders/index', { orders })
-
   },
+
+  async sales (req, res) {
+    // Pegar os pedidos do usuário
+    const sales = await LoadOrderService.load('orders', {
+      where: {seller_id: req.session.userId}
+    })
+
+    return res.render('orders/sales', { sales })
+  },
+
   async post(req, res) {
     try {
       // Pegar todos produtos do carrinho

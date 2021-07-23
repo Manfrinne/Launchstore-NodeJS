@@ -56,7 +56,7 @@ module.exports = {
         canceled: 'Cancelado'
       }
 
-      order.formattedStatus = statuses[order.status] //exem: statudes.open
+      order.formattedStatus = statuses[order.status] //exem: statuses.open
 
       // Formatação de atualizado em ...
       const updatedAt = date(order.updated_at)

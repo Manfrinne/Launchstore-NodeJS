@@ -110,7 +110,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estrutura HTML dos Meus Pedidos
 
-- [ ] - Estilo da Página Meus Pedidos
+- [x] - Estilo da Página Meus Pedidos
 
 - [ ] - Service de Pedidos
 

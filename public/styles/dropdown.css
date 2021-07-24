@@ -8,7 +8,7 @@
   visibility: initial;
 }
 
-ul.dropdown {
+ul.dropdown{
   position: absolute;
   width: 180px;
   top: 32px;
@@ -24,6 +24,13 @@ ul.dropdown {
   opacity: 0;
   visibility: hidden;
   transition: all 200ms;
+
+  z-index: 1;
+}
+
+ul.dropdown li button {
+  background-color: white;
+  cursor: pointer;
 }
 
 ul.dropdown li a,
@@ -40,7 +47,7 @@ ul.dropdown li button {
 }
 
 ul.dropdown li:hover,
-ul.dropdown li button:hover {
+ul.dropdown li:hover button {
   background-color: #eee;
 }
 

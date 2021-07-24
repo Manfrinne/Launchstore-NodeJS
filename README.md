@@ -118,7 +118,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estilo da página Detalhes do Pedido
 
-- [ ] - Menu para Editar Pedido
+- [X] - Menu para Editar Pedido
 
 - [ ] - Aplicar Dropdown no Menu Principal
 

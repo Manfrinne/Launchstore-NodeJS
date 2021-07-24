@@ -15,7 +15,7 @@ routes.use('/users', users)
 
 routes.use('/cart', cart)
 
-routes.use('/order', order)
+routes.use('/orders', order)
 
 // ALIAS
 routes.get('/ads/create', function(req, res) {

@@ -46,8 +46,6 @@ module.exports = {
 
   async show (req, res) {
 
-    console.log(req.params)
-
     const order = await LoadOrderService.load('order', {
       where: {product_id: req.params.id}
     })

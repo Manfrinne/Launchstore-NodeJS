@@ -116,7 +116,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Minhas Vendas e Detalhes do Pedido
 
-- [ ] - Estilo da página Detalhes do Pedido
+- [x] - Estilo da página Detalhes do Pedido
 
 - [ ] - Menu para Editar Pedido
 

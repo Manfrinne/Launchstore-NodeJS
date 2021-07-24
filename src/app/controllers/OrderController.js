@@ -1,5 +1,6 @@
 const LoadProductService = require("../services/loadProductService")
 const LoadOrderService = require("../services/loadOrderService")
+
 const User = require('../models/user')
 const Order = require('../models/order')
 
@@ -41,6 +42,17 @@ module.exports = {
     })
 
     return res.render('orders/sales', { sales })
+  },
+
+  async show (req, res) {
+
+    console.log(req.params)
+
+    const order = await LoadOrderService.load('order', {
+      where: {product_id: req.params.id}
+    })
+
+    return res.render('orders/details', { order })
   },
 
   async post(req, res) {

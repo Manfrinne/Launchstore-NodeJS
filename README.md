@@ -126,7 +126,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Estratégia de Soft Delete no Banco de Dados
 
-- [ ] - Soft Delete na Aplicação
+- [x] - Soft Delete na Aplicação
 
 
 ## **Como contribuir**

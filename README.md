@@ -122,7 +122,7 @@ Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, v
 
 - [x] - Aplicar Dropdown no Menu Principal
 
-- [ ] - Mudar Status do Pedido
+- [x] - Mudar Status do Pedido
 
 - [ ] - Estratégia de Soft Delete no Banco de Dados
 

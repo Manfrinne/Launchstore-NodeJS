@@ -21,6 +21,8 @@
   <li>Express</li>
   <li>Nunjucks</li>
   <li>PostgreSQL</li>
+  <li>NodeMailer</li>
+  <li>Lottie</li>
  </ul>
 
 ## **Rodando o projeto**

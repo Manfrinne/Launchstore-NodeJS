@@ -6,8 +6,8 @@ const Product = require('./src/app/models/Product')
 const File = require('./src/app/models/File')
 
 let usersIds = []
-let totalProducts = 10
-let totalUsers = 3
+let totalProducts = 15
+let totalUsers = 5
 
 async function createUsers() {
   const users = []
@@ -55,8 +55,7 @@ async function createProducts() {
   while(files.length < 50) {
     files.push({
       name: faker.image.image(),
-      // path: `public/images/placeholder.png`,
-      path: faker.image.image(),
+      path: `public/images/placeholder.png`,
       product_id: productsIds[Math.floor(Math.random() * totalProducts)]
     })
   }

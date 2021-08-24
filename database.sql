@@ -20,11 +20,6 @@ CREATE TABLE "categories" (
   "name" text NOT NULL
 );
 
--- RUN AFITER CREATE ALL TABLES
-INSERT INTO categories(name) VALUES ('comida');
-INSERT INTO categories(name) VALUES ('eletrônicos');
-INSERT INTO categories(name) VALUES ('automóveis');
-
 CREATE TABLE "files" (
   "id" SERIAL PRIMARY KEY,
   "name" text,
@@ -47,6 +42,11 @@ CREATE TABLE "users" (
   "created_at" timestamp DEFAULT (now()),
   "updated_at" timestamp DEFAULT (now())
 );
+
+-- RUN AFITER CREATE ALL TABLES
+INSERT INTO categories(name) VALUES ('comida');
+INSERT INTO categories(name) VALUES ('eletrônicos');
+INSERT INTO categories(name) VALUES ('automóveis');
 
 --FOREIGN KEY USERS
 ALTER TABLE "products" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");

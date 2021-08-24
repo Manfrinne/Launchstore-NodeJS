@@ -1,8 +1,8 @@
 const LoadProductService = require("../services/loadProductService")
 const LoadOrderService = require("../services/loadOrderService")
 
-const User = require('../models/user')
-const Order = require('../models/order')
+const User = require('../models/User')
+const Order = require('../models/Order')
 
 const Cart = require('../../lib/cart')
 const mailer = require('../../lib/mailer')

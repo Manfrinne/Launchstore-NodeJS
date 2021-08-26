@@ -150,5 +150,5 @@ WHERE products.id = old.id
 CREATE VIEW products_without_deleted AS
 SELECT * FROM products WHERE deleted_at IS NULL;
 -- 4. Renomear a VIEW com o nome da TABLE, para diminuir o impacto da modificação;
-ALTER TABLE products RENAME TO product_with_deleted;
+ALTER TABLE products RENAME TO products_with_deleted;
 ALTER TABLE products_without_deleted RENAME TO products;

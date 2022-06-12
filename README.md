@@ -1,148 +1,61 @@
+<div align="center">
+
+# Launchstore - Plataforma para vendas de produtos
+
+> Desenvolvimento fullstack de uma aplicação Web
+</div>
+
+
 
 <h1 align="center">
-  Launchstore - NodeJS Módule 8
+    <img alt="launchtore" title="launchtore" src=".github/logo.svg" />
 </h1>
 
-<blockquote align="center">Refatorar o código backend utilizando o padrão MVC</blockquote>
-
 <p align="center">
-
-  <a href="LICENSE" >
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
-  </a>
-
+  <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-rodando-o-projeto">Rodando o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
 </p>
 
-## **Tecnologias e ferramentas**
+<p align="center">
+  <img alt="launchstore" src=".github/launchstore.png" width="70%">
+</p>
 
- <ul>
-  <li>NodeJS</li>
-  <li>Nodemon</li>
-  <li>Express</li>
-  <li>Nunjucks</li>
-  <li>PostgreSQL</li>
-  <li>NodeMailer</li>
-  <li>Lottie</li>
- </ul>
+## 👨🏻‍💻 Sobre O projeto
 
-## **Rodando o projeto**
+O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores na internet.
+
+## 🚀 Tecnologias:
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/pt-br/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [PostgreSQL](https://www.postgresql.org/)
+
+## 💻 Rodando o projeto:
 
 1 - Clone o projeto e o abra utilizando seu editor.
 
-2 - Rode `npm install` na pasta do projeto.
+2 - Rode npm install na pasta do projeto.
 
-3 - Instale as dependências de desenvolvimento com `npm install -D nodemon browser-sync npm-run-all`.
+3 - Instale as dependências de desenvolvimento com npm install -D nodemon browser-sync npm-run-all.
 
 4 - Você vai precisar ter o PostgreSQL instalado na sua máquina.
 
-5 - Crie um banco de dados de acordo com o arquivo na raiz do projeto `database.sql`; lembre-se que esse arquivo deve estar de acordo com as especificações determinadas no arquivo `./src/config/db.js`.
+5 - Crie um banco de dados de acordo com o arquivo na raiz do projeto database.sql; lembre-se que esse arquivo deve estar de acordo com as especificações determinadas no arquivo ./src/config/db.js.
 
-3 - Rode um `npm start` para rodar o projeto.
+3 - Rode um npm start para rodar o projeto.
 
-
-## **Sobre o Projeto**
-
-Nesse módulo vamos refatorar o código utilizando o padrão MVC, além disso, vamos implementar a funcionalidade de venda da nossa aplicação e mais alguns detalhes, tipo animação com Lottie e outras coisas!
-
-## **Passos de Desenvolvimento:**
-
-### NodeJS Avançado
-
-- [x] - Padrão MVC
-
-- [x] - Criando Base Model
-
-- [x] - Utilizando o Base Model
-
-- [x] - Ajustes nos Controllers
-
-- [x] - Ajustes nos Controllers - Continuação
-
-- [x] - Seeds de Usuários com Faker
-
-- [x] - Seeds de Produtos e Imagens
-
-- [x] - Correção de Bugs Após Refatoração dos Models
-
-- [x] - Serviço de Carregamento de Produtos
-
-- [x] - Utilizando o Serviço de Carregamento de Produtos
-
-- [x] - Ajuste na pesquisa
-
-- [x] - Validação Back e Front end dos Produtos
-
-- [x] - Estrutura da Listagem de Anúncios do Usuário
-
-- [x] - Estilizando a Página de Listagem de Anúncios
-
-- [x] - Padronizando Estilo dos Cards
-
-- [x] - Pedido de Compra
-
-- [x] - Animações com Lottie e Mensagens pós Pedido
-
-### Funcionalidades Extras para a Launchstore:
-
-- [x] - Estrutura do Carrinho
-
-- [x] - Adicionando Itens ao Carrinho
-
-- [x] - Removendo Item do Carrinho
-
-- [x] - Deletando Itens do Carrinho
-
-- [x] - Estrutura HTML do Carrinho
-
-- [x] - Estilizando o Carrinho
-
-- [x] - Utilizando a Funcionalidade de Adicionar ao Carrinho
-
-- [x] - Utilizando a Funcionalidade Remover 1 item do Carrinho
-
-- [x] - Carrinho Vazio
-
-- [x] - Adicionar o Carrinho ao Menu
-
-- [x] - Tabela de Pedidos
-
-- [x] - Criar Pedidos
-
-- [x] - Dados do Pedido
-
-- [x] - Estrutura HTML dos Meus Pedidos
-
-- [x] - Estilo da Página Meus Pedidos
-
-- [x] - Service de Pedidos
-
-- [x] - Minhas Vendas e Detalhes do Pedido
-
-- [x] - Estilo da página Detalhes do Pedido
-
-- [X] - Menu para Editar Pedido
-
-- [x] - Aplicar Dropdown no Menu Principal
-
-- [x] - Mudar Status do Pedido
-
-- [x] - Estratégia de Soft Delete no Banco de Dados
-
-- [x] - Soft Delete na Aplicação
-
-
-## **Como contribuir**
+## 👨‍🏫 Como contribuir:
 
 -  Faça um fork do projeto;
 -  Crie uma nova branch, exemplo: `git checkout -b my-feature`;
 -  Commit as modificações, exemplo: `git commit -m 'feat: My new feature'`;
--  Faça um push para a sua branch: `git push origin my-feature`.
+-  Faça um push para a sua branch: `git push origin my-feature`;
 
-Desenvolvido no Bootcamp Launchbase por Manfrinne Ferreira [Contato](https://www.linkedin.com/in/manfrinne-ferreira-6033121a7/)
 
-## **Licença**
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](../LICENSE) para mais detalhes.
-
----
-
+Desenvolvido por 🧗‍♂️&nbsp; Manfrinne Ferreira 🥇 [Contato](https://www.linkedin.com/in/manfrinne-ferreira-6033121a7/) - Bootcamp da Rocketseat

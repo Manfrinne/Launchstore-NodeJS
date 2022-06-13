@@ -2,39 +2,47 @@
 
 # Launchstore - Plataforma para vendas de produtos
 
-> Desenvolvimento fullstack de uma aplicação Web
+> Desenvolvimento fullstack de uma aplicação Web - Bootcamp Rocketseat
 </div>
-
-
-
-<h1 align="center">
-    <img alt="launchtore" title="launchtore" src=".github/logo.svg" />
-</h1>
 
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-rodando-o-projeto">Rodando o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  
+
 </p>
 
 <p align="center">
-  <img alt="launchstore" src=".github/launchstore.png" width="70%">
+  <img alt="launchtore" title="launchtore" src=".github/logo.png"/>
 </p>
 
 ## 👨🏻‍💻 Sobre O projeto
 
-O Proffy é uma plataforma de estudos online que ajuda pessoas a encontrarem professores na internet.
+Launchstore é um marketplace/e-commerce para compra e venda de produtos ou serviços.
 
 ## 🚀 Tecnologias:
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js](https://nodejs.org/en/)
-- [Express](https://expressjs.com/pt-br/)
-- [Nunjucks](https://mozilla.github.io/nunjucks/)
-- [PostgreSQL](https://www.postgresql.org/)
+Frontend:
+- HTML
+- CSS
+- JavaScript
+- Nunjucks as template engine
+- Browser Sync to help us develop faster using hot reload and auto refresh
+- Lottie for animations
+
+Backend:
+- Node
+- Express to help us with server/routes
+- Nodemon to help us develop faster with auto reload server
+- Multer to upload images
+- Bcrypt for passwords
+- Sessions
+- Nodemailer
+- Faker
+- Postgres as database
 
 ## 💻 Rodando o projeto:
 
